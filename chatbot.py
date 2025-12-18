@@ -18,5 +18,5 @@ for message in st.session_state.messages:
     # Display user message in chat message container
     with st.chat_message("user"):
       st.markdown(prompt)
-# Add user message to chat history
-st.session_state.messages.append({"role": "user", "content": prompt})
+  # Add user message to chat history
+  st.session_state.messages.append({"role": "user", "content": prompt})

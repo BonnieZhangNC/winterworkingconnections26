@@ -11,9 +11,9 @@ def response_generator():
     "Do you need help?",
     ]
   )
-for word in response.split():
-  yield word + " "
-  time.sleep(0.05)
+  for word in response.split():
+    yield word + " "
+    time.sleep(0.05)
 
 st.title("Simple chat")
 
